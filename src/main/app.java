@@ -96,3 +96,13 @@ public class App {
             model.put("newHero",newHero);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/new/member/:squadId",(req,res)->{
+            Map<String, Object> model = new HashMap<>();
+            req.session().attribute("selectedSquad",req.params("squadId"));
+            model.put("selectedSquad", req.session().attribute("selectedSquad"));
+            model.put("item",1);
+            return new ModelAndView(model, "success.hbs");
+        },new HandlebarsTemplateEngine());
+
+        
