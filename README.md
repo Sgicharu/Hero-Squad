@@ -8,4 +8,11 @@ Sgicharu
 
 # Getting Started
 
-Clone this repository to your local machine to get Started
+Clone this repository to your local machine to get started
+git@github.com:Sgicharu/Hero-Squad.git
+
+# Built with
+
+- Java 
+- Intellij Idea
+- Spark 
