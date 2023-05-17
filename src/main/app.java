@@ -1,5 +1,3 @@
-public class app {
-}
 import models.Hero;
 import models.Squad;
 import spark.ModelAndView;
@@ -105,4 +103,17 @@ public class App {
             return new ModelAndView(model, "success.hbs");
         },new HandlebarsTemplateEngine());
 
-        
+        get("/squad/new/:id",(req,res)->{
+            Map<String, Object> model = new HashMap<>();
+            int id= Integer.parseInt(req.params(":id"));
+            Hero newMember = Hero.findById(id);
+            Squad newSquad = Squad.findBySquadId(1);
+            newSquad.setSquadMembers(newMember);
+            model.put("item", newMember.getName());
+            model.put("newHero",newSquad.getSquadName());
+            return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+    }
+}
