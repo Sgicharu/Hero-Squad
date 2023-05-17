@@ -3,6 +3,8 @@ import javax.swing.text.html.HTMLWriter;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+import java.util.ArrayList;
+
 public class hero {
     private String name;
     private int age;
@@ -11,7 +13,7 @@ public class hero {
     private int id;
     private static ArrayList<hero> instances = new ArrayList<>();
 
-    public Hero(String name, Integer age, String power, String weakness) {
+    public hero(String name, Integer age, String power, String weakness) {
         this.name = name;
         this.age = age;
         this.power = power;
@@ -31,4 +33,15 @@ public class hero {
     public static void clearAllHeroes(){instances.clear();}
     public int getId(){return id;}
     public static hero findById(int id) {return instances.get(id-1);}
+    public static hero setUpNewHero(){
+        return new hero("Arnold",23,"flying","fire");
+    }
+    public static hero setUpNewHero1(){
+        return new hero("Janet",30,"Night Vision","Light");
+    }
+    public static hero setUpNewHero2(){
+        return new hero("Jay",30,"Night Vision","Light");
+    }
+
+}
 }
