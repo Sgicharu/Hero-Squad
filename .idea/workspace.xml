@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e5844cd-dff2-47df-bb5d-ad63d9dee70b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/hero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/squad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sng/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sng/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/app.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Hero-Squad.main" />
